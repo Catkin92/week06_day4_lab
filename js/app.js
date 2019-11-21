@@ -32,4 +32,6 @@ const handleFormSubmit = function (event) {
   item.appendChild(inputTitle);
   item.appendChild(inputAuthor);
   item.appendChild(select);
+
+  document.getElementById('new-item-form').reset();
 };
