@@ -14,4 +14,22 @@ document.addEventListener('DOMContentLoaded', () => {
 const handleFormSubmit = function (event) {
   event.preventDefault();
   console.log(event);
+
+  const inputTitle = document.createElement('li');
+  inputTitle.textContent = `Title: ${event.target.title.value}`;
+
+
+  const inputAuthor = document.createElement('li');
+  inputAuthor.textContent = `Author: ${event.target.author.value}`;
+
+  const select = document.createElement('li');
+  select.textContent = `Category: ${event.target.category.value}`;
+  // console.log(event.target.title.value);
+
+
+
+  const item = document.querySelector('ul');
+  item.appendChild(inputTitle);
+  item.appendChild(inputAuthor);
+  item.appendChild(select);
 };
